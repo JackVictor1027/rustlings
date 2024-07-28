@@ -1,10 +1,12 @@
 // TODO: Fix the compiler error in this function.
 fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
-    let vec = vec;
+    let mut vec0 = Vec::new();
 
-    vec.push(88);
-
-    vec
+    for i in 0..vec.len() {
+        vec0.push(vec[i]);
+    }
+    vec0.push(88);
+    vec0
 }
 
 fn main() {
